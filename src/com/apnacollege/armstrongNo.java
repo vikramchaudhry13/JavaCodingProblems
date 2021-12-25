@@ -25,13 +25,13 @@ public class armstrongNo {
     public static void main(String []args){
         int num;
         Scanner s=new Scanner(System .in);
-        System.out.print("enter the number");
+//        System.out.print("enter the number");
         num=s.nextInt() ;
         if(isArmstrong(num) ){
-            System.out.print("armstrong");
+            System.out.print("1");
         }
         else{
-            System.out.print("not armstrong");
+            System.out.print("0");
         }
     }
 }

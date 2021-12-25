@@ -1,15 +1,17 @@
 package com.apnacollege;
 import java.util.* ;
-public class primrNos {
+import java.io.* ;
+public class primeNoTestCase {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Enter a number : ");
-        int n = s.nextInt();
-        if (isPrime(n)) {
-            System.out.println(n + " is a prime number");
-        }
-        else {
-            System.out.println(n + " is not a prime number");
+        int no = s.nextInt();
+        for(int i=1 ; i<=no ; i++ ){
+            int n=s.nextInt();
+            if (isPrime(n)) {
+                System.out.println("Yes");
+            }else {
+                System.out.println("No");
+            }
         }
     }
 
@@ -23,7 +25,8 @@ public class primrNos {
             }
         }
         return true;
-
+        // Your code here
     }
 }
+
 
